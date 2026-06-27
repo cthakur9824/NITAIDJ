@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NITAI DJ - Experience epic Vedic Psytrance, Devotional EDM, and cosmic electronic beats themed around Ramayan characters like Lord Ram, Laxman, Hanuman, and Sita.">
+    <title>NITAI DJ | Epic Vedic Trance & Divine Beats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cosmic Animated Background -->
+    <div class="cosmic-bg">
+        <div class="nebula-glow" style="top: 10%; left: 5%;"></div>
+        <div class="nebula-glow-2"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                NITAI<span>DJ</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#" class="active" data-section="home">Home</a></li>
+                <li><a href="#pantheon" data-section="pantheon">The Pantheon</a></li>
+                <li><a href="#mixer" data-section="mixer">Trance Deck</a></li>
+                <li><a href="#tour" data-section="tour">Mythic Tour</a></li>
+                <li><a href="#booking" data-section="booking">Bookings</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="hero-tag">The Divine Beat Is Born</span>
+                <h1>EXPERIENCE THE <br><span>COSMIC RESONANCE</span></h1>
+                <p class="hero-description">
+                    NITAI DJ merges ancient Sanskrit shlokas and the powerful legends of the Ramayana with the raw energy of Psytrance, Hardstyle, and Devotional EDM. Journey into a state of higher consciousness.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="hero-play-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px; vertical-align: middle;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        Play Live Set
+                    </button>
+                    <a href="#tour" class="btn btn-secondary">Tour Dates</a>
+                </div>
+            </div>
+            
+            <div class="hero-visualizer-container">
+                <div class="deck-pulse" id="deck-pulse-ring"></div>
+                <div class="turntable-outer" id="main-turntable">
+                    <div class="turntable-vinyl">
+                        <div class="turntable-center" id="turntable-artwork">
+                            <img src="assets/ram.png" alt="Current Playing Artwork" id="turntable-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="tonearm" id="main-tonearm"></div>
+                
+                <!-- Small bouncing equalizer overlay in hero -->
+                <div class="mini-wave" id="hero-mini-equalizer">
+                    <span style="animation-delay: 0.1s;"></span>
+                    <span style="animation-delay: 0.3s;"></span>
+                    <span style="animation-delay: 0.2s;"></span>
+                    <span style="animation-delay: 0.4s;"></span>
+                    <span style="animation-delay: 0.5s;"></span>
+                    <span style="animation-delay: 0.2s;"></span>
+                    <span style="animation-delay: 0.3s;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Pantheon Section -->
+    <section class="pantheon" id="pantheon">
+        <div class="container">
+            <div class="section-header">
+                <h2>THE <span>PANTHEON</span></h2>
+                <p>Select a divine entity to channel their spiritual energy, discover their legends, and unlock their dedicated electronic themes.</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="pantheon-tabs">
+                <button class="tab-btn active" data-character="ram">Lord Ram</button>
+                <button class="tab-btn" data-character="laxman">Laxman</button>
+                <button class="tab-btn" data-character="hanuman">Hanuman</button>
+                <button class="tab-btn" data-character="sita">Mata Sita</button>
+            </div>
+
+            <!-- Tab Contents -->
+            <div class="character-display">
+                
+                <!-- Lord Ram Card -->
+                <div class="character-card active" data-character="ram" data-theme="ram">
+                    <div class="character-img-wrapper">
+                        <img src="assets/ram.png" alt="Lord Ram Divine Warrior">
+                        <div class="character-glow-effect"></div>
+                    </div>
+                    <div class="character-info">
+                        <span class="character-badge ram">Divine Warrior</span>
+                        <h3>Shri Ram</h3>
+                        <div class="role-desc">Maryada Purushottam & Cosmic Archer</div>
+                        <p class="description">
+                            As the embodiment of righteousness and duty (Dharma), Lord Ram stands as a divine warrior king. Wielding his legendary bow Kodanda, he maintains cosmic balance with absolute composure. His energy translates into powerful, driving Goa Trance and Psytrance structures, where galloping basslines represent his steady warrior spirit, and soaring synth leads represent his cosmic arrow piercing through the darkness.
+                        </p>
+                        
+                        <h4 class="playlist-header">Dedicated Beats</h4>
+                        <div class="track-list">
+                            <div class="track-item" data-track-id="ram_1">
+                                <div class="track-meta">
+                                    <span class="track-num">01</span>
+                                    <div>
+                                        <div class="track-title">Kodanda Warrior (Psytrance Mix)</div>
+                                        <span class="track-duration">138 BPM • Saffron Kick</span>
+                                    </div>
+                                </div>
+                                <div class="track-play-btn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </div>
+                            <div class="track-item" data-track-id="ram_2">
+                                <div class="track-meta">
+                                    <span class="track-num">02</span>
+                                    <div>
+                                        <div class="track-title">Maryada Purushottam (Goa Trance Dhun)</div>
+                                        <span class="track-duration">140 BPM • Epic Anthemic Synth</span>
+                                    </div>
+                                </div>
+                                <div class="track-play-btn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laxman Card -->
+                <div class="character-card" data-character="laxman" data-theme="laxman">
+                    <div class="character-img-wrapper">
+                        <img src="assets/laxman.png" alt="Laxman Loyal Protector">
+                        <div class="character-glow-effect"></div>
+                    </div>
+                    <div class="character-info">
+                        <span class="character-badge laxman">Fierce Protector</span>
+                        <h3>Laxman</h3>
+                        <div class="role-desc">The Shield of Loyalty & Serpent Energy</div>
+                        <p class="description">
+                            The loyal brother and fierce guardian, Laxman represents vigilance, absolute focus, and protective fire. As an incarnation of the multi-headed serpent Shesha, he holds the weight of service. His character drives high-energy Hardstyle and Uplifting Trance themes, built around sharp, protective synth barriers (the Lakshman Rekha), heavy industrial kicks, and rapid arpeggios that mirror his relentless vigilance.
+                        </p>
+                        
+                        <h4 class="playlist-header">Dedicated Beats</h4>
+                        <div class="track-list">
+                            <div class="track-item" data-track-id="laxman_1">
+                                <div class="track-meta">
+                                    <span class="track-num">01</span>
+                                    <div>
+                                        <div class="track-title">Lakshman Rekha Shield (Hardstyle)</div>
+                                        <span class="track-duration">145 BPM • Intense Kick & Shield Fx</span>
+                                    </div>
+                                </div>
+                                <div class="track-play-btn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </div>
+                            <div class="track-item" data-track-id="laxman_2">
+                                <div class="track-meta">
+                                    <span class="track-num">02</span>
+                                    <div>
+                                        <div class="track-title">Saumitra Guard Rhythms</div>
+                                        <span class="track-duration">142 BPM • Fast Melodic Arps</span>
+                                    </div>
+                                </div>
+                                <div class="track-play-btn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hanuman Card -->
+                <div class="character-card" data-character="hanuman" data-theme="hanuman">
+                    <div class="character-img-wrapper">
+                        <img src="assets/hanuman.png" alt="Hanuman Devotee and Powerhouse">
+                        <div class="character-glow-effect"></div>
+                    </div>
+                    <div class="character-info">
+                        <span class="character-badge hanuman">Ultimate Devotee</span>
+                        <h3>Hanuman</h3>
+                        <div class="role-desc">Pawanputra & Infinite Powerhouse</div>
+                        <p class="description">
+                            Hanuman, the son of the wind, symbolizes ultimate courage, super-human power, and boundless devotion (Bhakti). Wielding his massive mace (Gada), he leaps across oceans and carries mountains. His high-octane spirit is represented by earth-shattering bass drops, heavy psy-breaks, and complex percussion. The mixes feature soaring chanting hooks and massive energetic drum patterns that elevate the crowd into pure ecstatic movement.
+                        </p>
+                        
+                        <h4 class="playlist-header">Dedicated Beats</h4>
+                        <div class="track-list">
+                            <div class="track-item" data-track-id="hanuman_1">
+                                <div class="track-meta">
+                                    <span class="track-num">01</span>
+                                    <div>
+                                        <div class="track-title">Hanuman Chalisa (Goa Psytrance Mix)</div>
+                                        <span class="track-duration">140 BPM • Chanting Hook & Heavy Drop</span>
+                                    </div>
+                                </div>
+                                <div class="track-play-btn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </div>
+                            <div class="track-item" data-track-id="hanuman_2">
+                                <div class="track-meta">
+                                    <span class="track-num">02</span>
+                                    <div>
+                                        <div class="track-title">Sanjeevani Bass Drop (Heavy Trance)</div>
+                                        <span class="track-duration">138 BPM • Mountain Lift Sub-Bass</span>
+                                    </div>
+                                </div>
+                                <div class="track-play-btn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sita Card -->
+                <div class="character-card" data-character="sita" data-theme="sita">
+                    <div class="character-img-wrapper">
+                        <img src="assets/sita.png" alt="Mata Sita Serene Grace">
+                        <div class="character-glow-effect"></div>
+                    </div>
+                    <div class="character-info">
+                        <span class="character-badge sita">Divine Grace</span>
+                        <h3>Mata Sita</h3>
+                        <div class="role-desc">Shakti, Resilience, & Earth Purity</div>
+                        <p class="description">
+                            As Goddess Lakshmi incarnate, Mata Sita is the embodiment of spiritual strength, composure, and pure grace. Born from the earth, her quiet resilience carries the universe. Her divine theme is represented by euphoric progressive trance, ambient atmospheres, and soothing ethereal vocals. Lush pads, resonant sitar soundscapes, and heart-opening melodies create a profound meditative and transcendent trance journey.
+                        </p>
+                        
+                        <h4 class="playlist-header">Dedicated Beats</h4>
+                        <div class="track-list">
+                            <div class="track-item" data-track-id="sita_1">
+                                <div class="track-meta">
+                                    <span class="track-num">01</span>
+                                    <div>
+                                        <div class="track-title">Janaki Cosmic Mantra (Progressive Trance)</div>
+                                        <span class="track-duration">132 BPM • Ethereal Vocal Pads</span>
+                                    </div>
+                                </div>
+                                <div class="track-play-btn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </div>
+                            <div class="track-item" data-track-id="sita_2">
+                                <div class="track-meta">
+                                    <span class="track-num">02</span>
+                                    <div>
+                                        <div class="track-title">Swayamvar Ambient Resonance</div>
+                                        <span class="track-duration">128 BPM • Chillout Vedic Melodies</span>
+                                    </div>
+                                </div>
+                                <div class="track-play-btn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Trance Deck Mixer Section -->
+    <section class="mixer-deck" id="mixer">
+        <div class="container">
+            <div class="section-header">
+                <h2>LIVE <span>TRANCE DECK</span></h2>
+                <p>Synthesize and customize the divine frequency in real-time. Control the filters, speed, and volume of the cosmic audio engine.</p>
+            </div>
+
+            <div class="mixer-grid">
+                
+                <!-- Live Visualizer Canvas Card -->
+                <div class="glass-panel visualizer-card">
+                    <div class="visualizer-header">
+                        <div class="visualizer-title">Cosmic Analyzer</div>
+                        <div class="visualizer-mode">
+                            <span class="mode-tag active" id="viz-mode-circle">Vedic Sphere</span>
+                            <span class="mode-tag" id="viz-mode-bars">Frequency Waves</span>
+                        </div>
+                    </div>
+                    
+                    <div class="canvas-container">
+                        <canvas id="canvas-visualizer"></canvas>
+                    </div>
+
+                    <div class="visualizer-status">
+                        <span>Engine: <b style="color: #fff;">Web Audio API</b></span>
+                        <span class="live" id="playback-status-text">DECK DISENGAGED</span>
+                    </div>
+                </div>
+
+                <!-- Deck Mixer Controls Card -->
+                <div class="glass-panel controls-card">
+                    
+                    <div class="now-playing-panel">
+                        <div class="now-playing-art">
+                            <img src="assets/ram.png" alt="Current Playing Track Cover" id="now-playing-img">
+                        </div>
+                        <div class="now-playing-info">
+                            <div class="now-playing-title" id="now-playing-title-txt">Kodanda Warrior (Psytrance Mix)</div>
+                            <div class="now-playing-artist" id="now-playing-artist-txt">Lord Ram Theme</div>
+                        </div>
+                        <div class="bpm-counter">
+                            <div>
+                                <div class="bpm-number" id="bpm-display-num">138</div>
+                                <div class="bpm-label">BPM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="playback-controls">
+                        <!-- Volume Slider -->
+                        <div class="control-slider-group">
+                            <div class="slider-label">
+                                <span>Master Volume</span>
+                                <span id="vol-val">70%</span>
+                            </div>
+                            <div class="slider-input-wrapper">
+                                <input type="range" min="0" max="100" value="70" class="slider-input" id="volume-slider">
+                            </div>
+                        </div>
+
+                        <!-- Pitch / Tempo Slider -->
+                        <div class="control-slider-group">
+                            <div class="slider-label">
+                                <span>Tempo / Pitch Scale</span>
+                                <span id="pitch-val">1.0x</span>
+                            </div>
+                            <div class="slider-input-wrapper">
+                                <input type="range" min="80" max="120" value="100" class="slider-input" id="pitch-slider">
+                            </div>
+                        </div>
+                        
+                        <!-- Synthesizer Lowpass Filter -->
+                        <div class="control-slider-group">
+                            <div class="slider-label">
+                                <span>Divine Lowpass Filter</span>
+                                <span id="filter-val">10000 Hz</span>
+                            </div>
+                            <div class="slider-input-wrapper">
+                                <input type="range" min="200" max="15000" value="10000" class="slider-input" id="filter-slider">
+                            </div>
+                        </div>
+
+                        <!-- Buttons Row -->
+                        <div class="buttons-row">
+                            <button class="deck-btn" id="deck-prev-btn" title="Previous Track">
+                                <svg viewBox="0 0 24 24"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line></svg>
+                            </button>
+                            <button class="deck-btn deck-btn-play" id="deck-play-btn" title="Play / Synthesize Live Trance">
+                                <svg viewBox="0 0 24 24" id="play-btn-icon"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            </button>
+                            <button class="deck-btn" id="deck-next-btn" title="Next Track">
+                                <svg viewBox="0 0 24 24"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Dates Section -->
+    <section class="tour" id="tour">
+        <div class="container">
+            <div class="section-header">
+                <h2>THE <span>MYTHIC TOUR</span></h2>
+                <p>Catch NITAI DJ live headlining the biggest spiritual electronic dance arenas. Check out dates and venues below.</p>
+            </div>
+
+            <div class="tour-list">
+                
+                <!-- Tour Item 1 -->
+                <div class="glass-panel tour-item">
+                    <div class="tour-date">
+                        <div class="day">12</div>
+                        <div class="month">Oct 2026</div>
+                    </div>
+                    <div class="tour-venue">
+                        <h4>Ayodhya Grand Arena</h4>
+                        <p>The Grand Return Festival</p>
+                    </div>
+                    <div class="tour-meta">
+                        Headliner Set: <span>Shri Ram Homecoming Celebration</span>
+                    </div>
+                    <a href="#booking" class="btn btn-secondary tour-btn">Reserve Entry</a>
+                </div>
+
+                <!-- Tour Item 2 -->
+                <div class="glass-panel tour-item">
+                    <div class="tour-date">
+                        <div class="day">28</div>
+                        <div class="month">Nov 2026</div>
+                    </div>
+                    <div class="tour-venue">
+                        <h4>Dandakaranya Woods</h4>
+                        <p>Deep Forest Sunset Set</p>
+                    </div>
+                    <div class="tour-meta">
+                        Atmospheric Set: <span>Sita's Serene Forest Rhapsody</span>
+                    </div>
+                    <a href="#booking" class="btn btn-secondary tour-btn">Reserve Entry</a>
+                </div>
+
+                <!-- Tour Item 3 -->
+                <div class="glass-panel tour-item">
+                    <div class="tour-date">
+                        <div class="day">18</div>
+                        <div class="month">Dec 2026</div>
+                    </div>
+                    <div class="tour-venue">
+                        <h4>Kishkindha Foothills</h4>
+                        <p>Power Valley Rave</p>
+                    </div>
+                    <div class="tour-meta">
+                        Goa Psytrance: <span>Hanuman's Mountain Liftoff</span>
+                    </div>
+                    <a href="#booking" class="btn btn-secondary tour-btn">Reserve Entry</a>
+                </div>
+
+                <!-- Tour Item 4 -->
+                <div class="glass-panel tour-item">
+                    <div class="tour-date">
+                        <div class="day">09</div>
+                        <div class="month">Jan 2027</div>
+                    </div>
+                    <div class="tour-venue">
+                        <h4>Lanka Victory Grounds</h4>
+                        <p>The Victory Beats War</p>
+                    </div>
+                    <div class="tour-meta">
+                        Hardstyle & Psytrance: <span>Laxman's Shield Activation</span>
+                    </div>
+                    <a href="#booking" class="btn btn-secondary tour-btn">Reserve Entry</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Contact Section -->
+    <section class="booking" id="booking">
+        <div class="container booking-grid">
+            <div class="booking-info">
+                <h3>RESERVE THE <span>COSMIC BEAT</span></h3>
+                <p>
+                    Bring the divine vibrations of NITAI DJ to your next cultural festival, electronic concert, or private event. Specializing in high-impact visuals, premium sound design, and deep Vedic energy.
+                </p>
+                <div class="contact-details">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div class="contact-text">
+                            <h5>Email Address</h5>
+                            <p>bookings@nitaidj.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
+                        <div class="contact-text">
+                            <h5>Official Portal</h5>
+                            <p>www.nitaidj.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel booking-form">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label class="form-label" for="form-name">Your Name</label>
+                        <input type="text" id="form-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="form-email">Email Address</label>
+                        <input type="email" id="form-email" class="form-input" placeholder="e.g. rahul@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="form-event">Event Type</label>
+                        <input type="text" id="form-event" class="form-input" placeholder="e.g. Spiritual Trance Festival, Concert" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="form-message">Spiritual Intent / Message</label>
+                        <textarea id="form-message" class="form-input" placeholder="Describe the energy and vibes you want to create..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Initiate Connection</button>
+                </form>
+                
+                <div class="form-success-msg" id="success-message">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--active-theme-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 16px; filter: drop-shadow(var(--active-neon-shadow));"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <h4>Connection Initiated!</h4>
+                    <p>Your message has traveled through the cosmos. NITAI DJ's booking circle will reach out to you shortly to harmonize the beats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h4>NITAI<span>DJ</span></h4>
+                <p>Connecting divine Sanskrit chanting with modern electronic synth music. Elevating dance floors to cosmic planes.</p>
+            </div>
+            <div class="footer-links">
+                <h5>Divine Realms</h5>
+                <ul>
+                    <li><a href="#pantheon">Lord Ram</a></li>
+                    <li><a href="#pantheon">Laxman</a></li>
+                    <li><a href="#pantheon">Hanuman</a></li>
+                    <li><a href="#pantheon">Mata Sita</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5>Information</h5>
+                <ul>
+                    <li><a href="#home">Home Base</a></li>
+                    <li><a href="#mixer">Deck Mixer</a></li>
+                    <li><a href="#tour">Live Gigs</a></li>
+                    <li><a href="#booking">Bookings</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 NITAI DJ. All Rights Reserved. Crafted for divine bass warriors.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon" aria-label="YouTube">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.41 19c1.72.46 8.59.46 8.59.46s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.37z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="SoundCloud">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5v14M22 9v6M7 8v10M2 10v4"></path></svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Spotify">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M8 11.5c2.5-1 5.5-1 8 0M9 14c2-0.7 4-0.7 6 0M9.5 16.5c1.5-0.5 3-0.5 4.5 0"></path></svg>
+                </a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
